@@ -8,10 +8,13 @@ related_posts: true
 ---
 
 We develop algorithms aiming to solve the problem 
-$$    
+
+$$ 
     \mathrm{min}_{x \in \mathcal{H}} f(x) + g(x)
 $$
 
-we do not place restrictions on the smoothness of $f$ or $g$ aside from convexity and continuity. 
+we do not place restrictions on the smoothness of $$f$$ or $$g$$ aside from convexity and continuity. 
 
 
+__Definition 1__: A function is said to be **closed** if its epigraph (area over the curve) is closed.
+__Definition 2__:  A function is **proper convex** if it is convex, doesn't attain the value $$-\infty$$, and is not identically $$\infty$$.   
