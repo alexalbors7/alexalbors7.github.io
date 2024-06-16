@@ -9,15 +9,15 @@ profile:
   image: profile.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>aalbors [at] uw [dot] edu </p>
-    <p>University of Washington</p>
+    # <p>aalbors [at] uw [dot] edu </p>
+    # <p>University of Washington</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I'm an undergraduate student at the University of Washington, majoring in Mathematics and minoring in Applied Mathematics. Broadly, I am interested in Optimization, Probability and Analysis. I am currently learning Reinforcement Learning and Optimal Transport. 
+I'm an undergraduate student at the University of Washington, majoring in Mathematics and minoring in Applied Mathematics. I am broadly interested in Optimization, Probability and Analysis. I am currently learning Reinforcement Learning and Optimal Transport. 
 
 Some graduate coursework I have enjoyed has been High-Dimensional Probability, Functional Analysis and Continuous Optimization.  
 
