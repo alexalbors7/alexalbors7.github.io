@@ -8,7 +8,7 @@ middle_name:
 last_name: Albors Juez
 email: aalbors@uw.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Third-year mathematics student at the University of Washington, minor in Applied Mathematics
+  Third-year Mathematics student at the University of Washington, minoring in Applied Mathematics
 footer_text: >
 
 keywords: jekyll, jekyll-theme, academic-website, mathematics, statistics, computer-science # add your own keywords or leave empty
