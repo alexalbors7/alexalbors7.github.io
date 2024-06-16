@@ -29,9 +29,8 @@
       "url": "https://www.washington.edu/",
       "area": "Mathematics",
       "studyType": "B.S.",
-      "startDate": "2021-09-29",
-      "endDate": "2025-06-07",
-      "score": "3.98",
+      "startDate": "2021",
+      "endDate": "2025",
       "courses": ["Optimization", "Analyis", "Machine Learning", "Probability"]
     }
   ],
