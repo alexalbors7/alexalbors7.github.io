@@ -71,11 +71,11 @@
   ],
   "projects": [
     {
-      "title": "Undergraduate Research Assistant",
+      "name": "Undergraduate Research Assistant",
+      "summary": "Implemented MCMC algorithms such as pCN and RCAR for Bayesian Inverse Problems under the supervision of Bamdad Hosseini using Matlab and Python",
+      "highlights": ["Markov Chains", "RCAR", "Python"],
       "startDate": "2023-06-15",
-      "endDate": "2023-09-15",
-      "advisor": "Bamdad Hosseini",
-      "summary": "Implemented MCMC algorithms such as pCN and RCAR for Bayesian Inverse Problems"
+      "endDate": "2023-09-15"
     }
   ]
 }
