@@ -28,7 +28,8 @@
       institution: Washington eXperimental Mathematics Laboratory
       year: 2023
       description:
-        - Investigated structure of optimal "bad science" matrices, described <a href = "https://arxiv.org/abs/2402.03205"> here </a>" 
+        - Investigated structure of optimal "Bad Science" matrices, described <a href = "https://arxiv.org/abs/2402.03205"> here </a> 
+        - Supervised by Professor Stefan Steinerberger and Graduate Student Tony Zeng. 
     - title: Statistics Student Intern
       institution: University of Warwick, Coventry, UK
       year: 2024
@@ -36,31 +37,12 @@
         - Work on Reinforcement Learning Algorithms and Semi-Supervised Learning
         - Supervised by Giovanni Montana and Matthew Thorpe
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
 - title: Honors and Awards
   type: time_table
   contents:
     - year: 2022
       items:
         - Outstanding Student Award
-
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items:
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
 
 - title: Other interests
   type: list
