@@ -5,7 +5,7 @@ date: 2024-06-16 19:22:00
 description: The following introduces common, proximal algorithms and two interesting applications. 
 tags: math 
 categories: sample-posts
-related_posts: false
+related_posts: true
 ---
 
 We develop algorithms aiming to solve the problem 
