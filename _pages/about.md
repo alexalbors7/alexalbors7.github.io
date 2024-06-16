@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Student. Fuerza, Honor, and some Math. 
+subtitle: Student. Fuerza y Honor. 
 
 profile:
   align: right
   image: profile.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Department of Mathematics</p>
+    <p>aalbors [at] uw [dot] edu </p>
     <p>University of Washington</p>
-    <p>Seattle, Washington 98195</p>
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
