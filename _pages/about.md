@@ -18,11 +18,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-I'm an undergraduate student at the University of Washington, majoring in Mathematics and minoring in Applied Mathematics. Broadly, I am interested in anything related to Optimization, Probability and Analysis. I am currently learning Reinforcement Learning and Optimal Transport. 
+I'm an undergraduate student at the University of Washington, majoring in Mathematics and minoring in Applied Mathematics. Broadly, I am interested in Optimization, Probability and Analysis. I am currently learning Reinforcement Learning and Optimal Transport. 
 
-Some graduate coursework I have lately taken and enjoyed have been High-Dimensional Probability, Functional Analysis and Continuous Optimization. I set up this page to write about cool things I learn about. 
+Some graduate coursework I have enjoyed has been High-Dimensional Probability, Functional Analysis and Continuous Optimization.  
 
-I was born and raised in Barcelona, Spain. Here is my [Github](https://github.com/alexalbors7/), my LinkedIn page can be found [here](https://www.linkedin.com/in/alex-albors-juez), and I can be reached at aalbors [at] uw [dot] edu. 
+I was born and raised in Barcelona, Spain, and moved to the US for College. Here is my [Github](https://github.com/alexalbors7/), my LinkedIn page can be found [here](https://www.linkedin.com/in/alex-albors-juez), and I can be reached at aalbors [at] uw [dot] edu. 
 
 In my spare time, I enjoy sailing, skiing, slacklining, and playing the piano. 
 
