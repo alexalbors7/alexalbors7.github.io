@@ -6,16 +6,16 @@ subtitle: <a href='#'>Affiliations</a>. Fuerza y Honor.
 
 profile:
   align: right
-  image: Github_profile.JPG
+  image: profile.JPG
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Mathematics</p>
     <p>University of Washington</p>
     <p>Seattle, Washington 12345</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
 I'm a Mathematics student at the University of Washington, minoring in Applied Mathematics. I am interested in Optimization, Probability and Analysis. I am currently learning Reinforcement Learning and Optimal Transport. 
