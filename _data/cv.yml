@@ -30,12 +30,12 @@
       description:
         - Investigated structure of optimal "Bad Science" matrices, described <a href = "https://arxiv.org/abs/2402.03205"> here </a> 
         - Supervised by Professor Stefan Steinerberger and Graduate Student Tony Zeng. 
-    - title: Statistics Student Intern
-      institution: University of Warwick, Coventry, UK
-      year: 2024
-      description:
-        - Work on Reinforcement Learning Algorithms and Semi-Supervised Learning
-        - Supervised by Giovanni Montana and Matthew Thorpe
+    # - title: Statistics Student Intern
+    #   institution: University of Warwick, Coventry, UK
+    #   year: 2024
+    #   description:
+    #     - Work on Reinforcement Learning Algorithms and Semi-Supervised Learning
+    #     - Supervised by Giovanni Montana and Matthew Thorpe
 
 - title: Honors and Awards
   type: time_table
@@ -47,7 +47,6 @@
 - title: Other interests
   type: list
   contents:
-    - Sailing (Flying Junior, Lasers)
+    - Sailing
     - Weightlifting
     - Slacklining
-    - Soccer
