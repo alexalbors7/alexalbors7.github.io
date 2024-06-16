@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Splitting Algorithms
-date: 2024-06-16 11:12:00-0400
+title: splitting algorithms
+date: 2024-06-16 19:22:00
 description: The following introduces common, proximal algorithms and two interesting applications. 
-tags: optimization math 
+tags: math 
 categories: sample-posts
 related_posts: false
 ---
