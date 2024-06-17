@@ -25,25 +25,33 @@ __Definition 2__: A function is **proper convex** if it is convex, doesn't attai
 ### Operators
 - An relation or operator $$T$$ is a subset of $$\mathbb{R}^n \times \mathbb{R}^n$$. In other words, it is a multivalued function from $$\mathbb{R}^n$$ to $$\mathbb{R}^n \times \mathbb{R}^n$$. When we say $$Tx$$ we mean the set $$\{y: (x, y) \in T\}$$. A function naturally induces a relation by the set $$(x, f(x))$$ with $$x \in \mathrm{dom}f$$.
 - Convexity implies the operators $$\partial f$$ and $$\partial g$$ are **monotone**, meaning that for all $$y_1 \in \partial f(x_1)$$ and $$y_2 \in \partial f(x_2)$$, then
+  
   $$ 
   (y_1 -  y_2)^\top (x_1 - x_2) \geq 0 
   $$
+  
   cannot be covered as a set in $$\mathbb{R}^n \times \mathbb{R}^n$$.
 - A continuous, monotone function is maximal. We say an operator $$T$$ is $$L$$-Lipschitz if
+  
   $$
   \|Tx-Ty\| \leq  L\|x-y\|
   $$
+
   holds for all $$x,y \in \mathrm{dom}T$$.
 - If $$L \leq 1$$, we say $$T$$ is *non-expansive*, and if $$L < 1$$, then we say $$T$$ is *contractive*.  
 - It is easy to see that any contractive operator has a unique fixed point $$x^\star$$, and that for any initial $$x_0$$, the sequence formed by $$x_{k+1} = Tx_k$$ converges to $$x^\star$$ (Banach fixed point theorem). 
 - We define the Resolvent of an operator $$A$$ with parameter $$\lambda > 0$$ to be 
+ 
   $$
   R_A := (I + \lambda A)^{-1}
   $$
+
   and the Cayley operator to be 
+
   $$
   C_A := 2R_A - I = 2(I + \lambda A)^{-1} - I
   $$
+
 - We always work with subdifferential operators, that are maximally monotone, i.e. $$A  = \partial f$$ for a proper convex and closed function $$f$$.
 
 The key connection between non-expansive operators and optimization is the following proposition.
