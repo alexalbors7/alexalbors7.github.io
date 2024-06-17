@@ -88,13 +88,15 @@ _Proof of Proposition 2_:
 First is easy and follows by definition. Second is harder, called **Minty's surjectivity theorem**.
 It turns out the converse of Minty's surjectivity theorem holds. Both proofs can be found in \cite{RyuYin2022}'s Stanford slides, available [here](https://large-scale-book.mathopt.com/slides/chapter10.pdf).
 
-- It is clear that a non-expansive operator need not converge to a fixed point: consider a rotation matrix or the operator $$x \mapsto -x$$. However, it turns out we may modify the operator to ensure convergence \textit{ while conserving the same fixed points}! We do so by averaging operators.
+- It is clear that a non-expansive operator need not converge to a fixed point: consider a rotation matrix or the operator $$x \mapsto -x$$. However, it turns out we may modify the operator to ensure convergence *while conserving the same fixed points*! We do so by averaging operators.
   
 __Definition 3__: 
   An operator $$T$$ is **averaged** if it can be written as a strict convex combination of the identity and a non-expansive operator $$A$$,
+
   $$T = \alpha I + (1 - \alpha)A \quad \alpha \in (0,1)$$
 
-We now show an averaged operators converges to one of its fixed points, in case one exists. 
+We now show an averaged operators converges to one of its fixed points, in case one exists.
+
 __Theorem 1__ (Convergence of Averaged Operators):
   An averaged operator $$F$$ converges to a fixed point if one exists. 
 
@@ -104,19 +106,21 @@ _Proof_:
   $$\begin{align}
     \|x^{k+1} - x^{\star}\|^2 
     = \|\alpha (x^k - x^\star) + (1-\alpha) (Gx^k - Gx^\star)\|^2 \\ 
-    = \alpha \| (x^k - x^\star)\|^2 +(1-\alpha)\|(Gx^k - Gx^\star)\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
-    \leq \alpha \|x^k - x^\star\|^2 + (1-\alpha) \|x^k - x^\star\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
-    = \|x^k - x^\star\|^2 - \alpha(1 - \alpha) \|Gx^k - x^k\|^2
+    &= \alpha \| (x^k - x^\star)\|^2 +(1-\alpha)\|(Gx^k - Gx^\star)\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
+    &\leq \alpha \|x^k - x^\star\|^2 + (1-\alpha) \|x^k - x^\star\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
+    &= \|x^k - x^\star\|^2 - \alpha(1 - \alpha) \|Gx^k - x^k\|^2
   \end{align}$$
 
   and by a telescoping argument on the recursive term , we have that
 
   $$\|x^{k+1}\| - x^\star\|^2  \leq \|x^0 - x^\star\| - \alpha(1-\alpha) \sum_{i=0}^k \|x^i - Gx^i\|^2 $$
+
   hence, 
 
   $$\sum_{i=0}^k \left\lVert x^i - Gx^i\right\rVert^2 \leq \frac{1}{\alpha(1-\alpha)}\|x^0 - x^\star\|$$
 
-  which by non-expansiveness, shows that 
+  which by non-expansiveness, shows that
+   
   $$\|x^k - Gx^k\|^2 \leq \frac{1}{(k+1)(\alpha(1-\alpha))}\|x^0 - x^\star\|^2$$
 
   So convergence is linear, and we note that $$\alpha = 1/2$$ yields the tighest upper bound on the rate. 
@@ -205,8 +209,8 @@ Set $$x_{k+1} = \mathrm{Prox}_g(y_k)$$. Then the final algorithm is
 
 $$\begin{align}
   \begin{cases}
-    x_{k + 1} = \Prox_g (y_k) \\
-    y_{k+1} = y_k + \Prox_f (2x_{k+1} - y_k) - x_{k+1} 
+    x_{k + 1} = \mathrm{Prox}_g (y_k) \\
+    y_{k+1} = y_k + \mathrm{Prox}_f (2x_{k+1} - y_k) - x_{k+1} 
   \end{cases}
 \end{align}$$
 
@@ -214,8 +218,8 @@ Then we see that $$y_k$$ tends to a fixed point $$y^\star$$, and that the final 
 
 $$\begin{align}
   \begin{cases}
-    u_{k+1} = \Prox _g ( x_k + w_k) \\ 
-    x_{k+1} = \Prox _f (u_{k+1} - w_k) \\
+    u_{k+1} = \mathrm{Prox}_g ( x_k + w_k) \\ 
+    x_{k+1} = \mathrm{Prox}_f (u_{k+1} - w_k) \\
     w_{k+1} = w_k + x_{k+1} - u_{k+1}
   \end{cases}
   \end{align}$$
