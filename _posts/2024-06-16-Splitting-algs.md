@@ -101,6 +101,7 @@ __Theorem 1__ (Convergence of Averaged Operators):
   An averaged operator $$F$$ converges to a fixed point if one exists. 
 
 _Proof_:
+
   Let $$F = \alpha I + (1-\alpha)G$$ with $$G$$ non-expansive and $$\alpha \in (0,1)$$. Then, using the identity $$\|\alpha a + (1-\alpha)b\|^2 = \alpha \|a\|^2 + (1 - \alpha)\|b\|^2 - \alpha(1 - \alpha) \|a - b\|^2$$,
 
   $$\begin{align}
@@ -120,12 +121,12 @@ _Proof_:
   $$\sum_{i=0}^k \left\lVert x^i - Gx^i\right\rVert^2 \leq \frac{1}{\alpha(1-\alpha)}\|x^0 - x^\star\|$$
 
   which by non-expansiveness, shows that
-   
+
   $$\|x^k - Gx^k\|^2 \leq \frac{1}{(k+1)(\alpha(1-\alpha))}\|x^0 - x^\star\|^2$$
 
   So convergence is linear, and we note that $$\alpha = 1/2$$ yields the tighest upper bound on the rate. 
 
-- So we're done! We may use the averaged operator $$T=\frac{1}{2}(I + C_{\partial f} \circ C_{\partial g})$$ to converge to a fixed point $$z^\star$$, and obtain a good approximation to the optimal by setting $$x^\star = R_{\partial g} (z^\star)$$. This is the core idea behind both Douglas-Rachford and ADMM. Since we will be working with subdifferential operators of convex functions, it is imperative to study the Cayley and Resolvent operators in those cases. This brings us to Proximal mappings.
+So we're done! We may use the averaged operator $$T=\frac{1}{2}(I + C_{\partial f} \circ C_{\partial g})$$ to converge to a fixed point $$z^\star$$, and obtain a good approximation to the optimal by setting $$x^\star = R_{\partial g} (z^\star)$$. This is the core idea behind both Douglas-Rachford and ADMM. Since we will be working with subdifferential operators of convex functions, it is imperative to study the Cayley and Resolvent operators in those cases. This brings us to Proximal mappings.
 
 ### The Proximal operator
 We finally introduce the operator that will play a key role in the derivation of Douglas-Rachford and ADMM. 
@@ -137,7 +138,7 @@ __Definition__:
 - A function $$f$$ with an easy proximal operator is called either proximable or simple. 
   - Proximal of $$f(x) = 0$$ is identity
   - Proximal of $$f(x) = x^2$$ is Shrinkage. 
-  - Proximal of $$f(x) = |x|$$ is soft-thresholding. 
+  - Proximal of $$f(x) = \|x\|$$ is soft-thresholding. 
   - Proximal of $$f(x) = \mathbf{1}_{\{x \geq 0\}}$$ is a projection onto $$C$$. 
   - Proximal of $$f(x) = \sum_{i=1}^d f_i(x_i)$$ is separable. 
   - Proximal of $$f(x) = \|x\|_1$$ is soft-thresholding on individual coordinates. 
@@ -146,11 +147,13 @@ __Definition__:
 The key connection is the following:
 __Theorem__:
 Given a function $$f$$, the equality 
+
 $$\mathrm{Prox}_{\lambda f}(x) = R_{\partial \lambda f} = (I + \lambda \partial f)^{-1}$$
  holds. 
-__Proof__:
 
-$$ u \in \Prox_{\lambda f}(x) \iff 0 \in \partial f(u) +\frac{1}{\lambda}(u - x) \iff x \in (\lambda \partial f + I)u \iff u \in (I + \partial \lambda f)^{-1}(x) = R_{\lambda \partial f}(x) $$
+_Proof_:
+
+$$ u \in \mathrm{Prox}_{\lambda f}(x) \iff 0 \in \partial f(u) +\frac{1}{\lambda}(u - x) \iff x \in (\lambda \partial f + I)u \iff u \in (I + \partial \lambda f)^{-1}(x) = R_{\lambda \partial f}(x) $$
 
 - Applying the proximal operator can be thought of as taking an implicit gradient step. Whereas gradient descent employs the update $$x^{k + 1} = x^k - \lambda \partial f (x^k)$$, the operation $$x^{k + 1} = \mathrm{Prox}_{\lambda f}(x^k)$$ results in a slight modification of the gradient. To see this, use the resolvent definition to get 
 
@@ -162,20 +165,19 @@ An important identity that generalizes the orthogonal decomposition and that mak
 
 __Theorem (Moreau's Identity)__:
   The following identity holds. 
-    $$ \mathrm{Prox}_{\lambda f^*}(x) + \lambda \mathrm{Prox}_{f/\lambda}(x/\lambda) = x $$
+    $$\mathrm{Prox}_{\lambda f^*}(x) + \lambda \mathrm{Prox}_{f/\lambda}(x/\lambda) = x$$
+
 _Proof_:
- We first prove the case where $$\lambda = 1$$ 
+ We first prove the case where $$\lambda = 1$$: 
+ $$\begin{align*}
+    u = \mathrm{Prox}_(x) &\iff 0 \in \partial f(u) + u - x  \\ 
+                        &\iff x - u \in \partial f(u) \\
+                        &\iff  u \in \partial f^*(x - u) \\
+                        &\iff  0 \in \partial f^*(x - u) + ((x - u) - x) \\
+                        &\iff x - u = \mathrm{Prox}_{f^*}(x)
+\end{align*}$$
 
-    $$ \begin{align*}
-        u = \mathrm{Prox}_(x) \iff 0 \in \partial f(u) + u - x  \\ 
-                            \iff x - u \in \partial f(u) \\
-                            \iff  u \in \partial f^*(x - u) \\
-                            \iff  0 \in \partial f^*(x - u) + ((x - u) - x) \\
-                            \iff x - u = \mathrm{Prox}_{f^*}(x)
-    \end{align*}
-    $$
-
-  For the general case, we first compute $$(\lambda f)^*$$ and then $${(\lambda f)^*}$$.  
+For the general case, we first compute $$(\lambda f)^*$$ and then $${(\lambda f)^*}$$.  
 
   $$\begin{align*}
     (\lambda f)^* (y) &= \sup_x x^\top y - \lambda f^*(x) \\
@@ -185,10 +187,12 @@ _Proof_:
 
   With this result, we have
 
-  $$\mathrm{Prox}_{(\lambda f)^*}(x) = \mathrm{argmin}_u \hspace{2pt} \lambda f^*(u/\lambda) + \frac{1}{2}\|u - x\|_2^2 \\
-                                          &= \mathrm{argmin}_u \hspace{2pt} \frac{1}{\lambda}f^*(u / \lambda) + \frac{1}{2}\norm{\frac{u}{\lambda}  - \frac{x}{\lambda}}_2^2 \\
+  $$\begin{align*}
+    \mathrm{Prox}_{(\lambda f)^*}(x) &= \mathrm{argmin}_u \hspace{2pt} \lambda f^*(u/\lambda) + \frac{1}{2}\|u - x\|_2^2  \\
+                                          &= \mathrm{argmin}_u \hspace{2pt} \frac{1}{\lambda}f^*(u / \lambda) + \frac{1}{2}\|\frac{u}{\lambda}  - \frac{x}{\lambda}\|_2^2 \\
                                           &= \lambda \mathrm{argmin}_u f^*(u)/\lambda + \frac{1}{\lambda}\|u - x/\lambda\|^2_2 \\
-                                          &= \lambda \mathrm{Prox}_{f^*/\lambda}(x/\lambda)$$
+                                          &= \lambda \mathrm{Prox}_{f^*/\lambda}(x/\lambda)
+  \end{align*}$$
 
 which leads to the desired result by using these equalities after applying the basic Moreau identity to $$(\lambda f)$$. 
 
