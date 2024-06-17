@@ -9,11 +9,12 @@ related_posts: true
 
 ## Proximal Algorithms
 
-We develop algorithms aiming to solve the following problem:
+We develop algorithms aiming to solve the  problem
 
 $$
 \min_{x \in \mathcal{H}} f(x) + g(x)
 $$
+
 where $$f$$ and $$g$$ are assumed to be proper convex closed functions. 
 
 ### Definitions
@@ -29,7 +30,7 @@ __Definition 2__: A function is **proper convex** if it is convex, doesn't attai
   $$ 
   (y_1 -  y_2)^\top (x_1 - x_2) \geq 0 
   $$
-  
+
   cannot be covered as a set in $$\mathbb{R}^n \times \mathbb{R}^n$$.
 - A continuous, monotone function is maximal. We say an operator $$T$$ is $$L$$-Lipschitz if
   
