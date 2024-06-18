@@ -1,11 +1,11 @@
 ---
-layout: distill
+layout: post
 title: Proximal mappings and the Douglas-Rachford algorithm 
 date: 2024-05-16 19:22:00
 description: I discuss basics on proximal splitting schemes for convex optimization. The main motivation is to provide background for the methods used in 'Optimal Transport with Proximal Spliting' by Papadakis et al to solve Benamou-Brenier's formulation of the Wasserstein-2 distance. 
 tags: optimization  
 related_posts: true
-bibliography: 2024-06-16-splitting-algs
+bibliography: 2024-06-16-splitting-algs.bib
 ---
 
 ## Proximal Algorithms
