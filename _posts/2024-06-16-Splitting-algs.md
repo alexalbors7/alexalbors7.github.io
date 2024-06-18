@@ -205,8 +205,8 @@ where $$f$$ and $$g$$ are closed, convex functions. Initialize a $$y_0$$. Dougla
 
 $$\begin{align*}
     y_{k + 1} &= \frac{1}{2} (I + C_{\partial f} \circ C_{\partial g}) y_k \\
-                  &= y_k/2 + \mathrm{Prox}_{g}(2\mathrm{Prox}__g(y_k) - y_k) - 2\mathrm{Prox}_g (y_k)/2 + y_k/2  \\
-                  &= y_k + \mathrm{Prox}_{f}(2\mathrm{Prox}_g(y_k) - y_k)
+                  &= y_k/2 + \mathrm{Prox}_{g}(2\mathrm{Prox}_{g}(y_k) - y_k) - 2\mathrm{Prox}_g (y_k)/2 + y_k/2  \\
+                  &= y_k + \mathrm{Prox}_{f}(2\mathrm{Prox}_{g}(y_k) - y_k)
 \end{align*}$$
 
 Set $$x_{k+1} = \mathrm{Prox}_g(y_k)$$. Then the final algorithm is 
