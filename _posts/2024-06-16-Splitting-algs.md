@@ -15,7 +15,9 @@ $$
 \min_{x \in \mathcal{H}} f(x) + g(x)
 $$
 
-where $$f$$ and $$g$$ are assumed to be proper convex closed functions. 
+where $$f$$ and $$g$$ are assumed to be proper convex closed functions. We have 
+<d-cite key="einstein1920relativity"></d-cite> as a citation. 
+
 
 ### Definitions
 
