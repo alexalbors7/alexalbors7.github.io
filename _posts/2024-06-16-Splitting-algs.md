@@ -131,30 +131,30 @@ _Proof_:
 So we're done! We may use the averaged operator $$T=\frac{1}{2}(I + C_{\partial f} \circ C_{\partial g})$$ to converge to a fixed point $$z^\star$$, and obtain a good approximation to the optimal by setting $$x^\star = R_{\partial g} (z^\star)$$. This is the core idea behind both Douglas-Rachford and ADMM. Since we will be working with subdifferential operators of convex functions, it is imperative to study the Cayley and Resolvent operators in those cases. This brings us to Proximal mappings.
 
 ### The Proximal operator
-We finally introduce the operator that will play a key role in the derivation of Douglas-Rachford and ADMM. 
+We finally introduce the operator that will play a key role in the derivation of Douglas-Rachford and ADMM.
+ 
 __Definition__:
   Given a function $$f$$ and a parameter $$\lambda > 0$$, the *proximal operator* of $$f$$ is defined as 
 
   $$\mathrm{Prox}_{\lambda f} (x) := \mathrm{argmin}_u \hspace{2pt} f(u) + \frac{1}{2\lambda} \|u - x\|_2^2 $$
 
 - A function $$f$$ with an easy proximal operator is called either proximable or simple. 
-  - Proximal of $$f(x) = 0$$ is identity
+  - Proximal of $$f(x) = 0$$ is the identity
   - Proximal of $$f(x) = x^2$$ is Shrinkage. 
-  - Proximal of $$f(x) = \|x\|$$ is soft-thresholding. 
   - Proximal of $$f(x) = \mathbf{1}_{\{x \geq 0\}}$$ is a projection onto $$C$$. 
   - Proximal of $$f(x) = \sum_{i=1}^d f_i(x_i)$$ is separable. 
   - Proximal of $$f(x) = \|x\|_1$$ is soft-thresholding on individual coordinates. 
   - Proximal of $$f(X) = \|X\|_*$$ is soft-thresholding on singular values. 
 
 The key connection is the following:
-__Theorem__:
+
+__Theorem 2__:
 Given a function $$f$$, the equality 
 
 $$\mathrm{Prox}_{\lambda f}(x) = R_{\partial \lambda f} = (I + \lambda \partial f)^{-1}$$
  holds. 
 
 _Proof_:
-
 $$ u \in \mathrm{Prox}_{\lambda f}(x) \iff 0 \in \partial f(u) +\frac{1}{\lambda}(u - x) \iff x \in (\lambda \partial f + I)u \iff u \in (I + \partial \lambda f)^{-1}(x) = R_{\lambda \partial f}(x) $$
 
 - Applying the proximal operator can be thought of as taking an implicit gradient step. Whereas gradient descent employs the update $$x^{k + 1} = x^k - \lambda \partial f (x^k)$$, the operation $$x^{k + 1} = \mathrm{Prox}_{\lambda f}(x^k)$$ results in a slight modification of the gradient. To see this, use the resolvent definition to get 
