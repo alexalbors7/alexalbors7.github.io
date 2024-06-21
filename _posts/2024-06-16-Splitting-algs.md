@@ -16,7 +16,7 @@ $$
 \min_{x \in \mathcal{H}} f(x) + g(x)
 $$
 
-where $$f$$ and $$g$$ are assumed to be proper convex closed functions. The main motivation to survey these methods comes from reading the article 'Optimal Transport with Proximal Splitting' by Papadakis et al <d-cite key="Papadakis_2014"></d-cite>. Since these derivations are not discussed in the paper, I found the monograph of Parikh and Boyd <d-cite key="Parikh2013"></d-cite> as well as the Dirk Lorenz's [regularize blog](https://regularize.wordpress.com/), to be particularly useful.  
+where $$f$$ and $$g$$ are assumed to be proper convex closed functions. The main motivation to survey these methods comes from reading the article 'Optimal Transport with Proximal Splitting' by Papadakis et al <d-cite key="Papadakis_2014"></d-cite>. Since these derivations are not discussed in the paper, I found the monograph of Parikh and Boyd <d-cite key="Parikh2013"></d-cite> as well as the Dirk Lorenz's [regularize blog](https://regularize.wordpress.com/) to be particularly useful.  
 
 
 ### Definitions
@@ -32,9 +32,9 @@ __Definition 2__: A function is **proper convex** if it is convex, doesn't attai
   $$ 
   (y_1 -  y_2)^\top (x_1 - x_2) \geq 0 
   $$
-
-  cannot be covered as a set in $$\mathbb{R}^n \times \mathbb{R}^n$$.
-- A continuous, monotone function is maximal. We say an operator $$T$$ is $$L$$-Lipschitz if
+  an operator is **maximal** if it cannot be covered as a set in $$\mathbb{R}^n \times \mathbb{R}^n$$.
+- A continuous, monotone function is maximal. 
+- We say an operator $$T$$ is $$L$$-Lipschitz if
   
   $$
   \|Tx-Ty\| \leq  L\|x-y\|
@@ -106,13 +106,13 @@ _Proof_:
 
   Let $$F = \alpha I + (1-\alpha)G$$ with $$G$$ non-expansive and $$\alpha \in (0,1)$$. Then, using the identity $$\|\alpha a + (1-\alpha)b\|^2 = \alpha \|a\|^2 + (1 - \alpha)\|b\|^2 - \alpha(1 - \alpha) \|a - b\|^2$$,
 
-  $$\begin{align}
+  $$\begin{align*}
     \|x^{k+1} - x^{\star}\|^2 
     &= \|\alpha (x^k - x^\star) + (1-\alpha) (Gx^k - Gx^\star)\|^2 \\ 
     &= \alpha \| (x^k - x^\star)\|^2 +(1-\alpha)\|(Gx^k - Gx^\star)\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
     &\leq \alpha \|x^k - x^\star\|^2 + (1-\alpha) \|x^k - x^\star\|^2 - \alpha (1 - \alpha) \|Gx^k - x^k\|^2 \\
     &= \|x^k - x^\star\|^2 - \alpha(1 - \alpha) \|Gx^k - x^k\|^2
-  \end{align}$$
+  \end{align*}$$
 
   and by a telescoping argument on the recursive term , we have that
 
