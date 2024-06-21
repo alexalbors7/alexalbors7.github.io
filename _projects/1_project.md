@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Transformed-based Pix2Pix
+title: Transformer Pix2Pix
 description: I trained a transformer-based Pix2Pix GAN as my final project for my deep learning class. 
 img: assets/img/Pix2Pix.png
 importance: 1
