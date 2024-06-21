@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: with background image
+title: Transformed-based Pix2Pix
+description: I trained a transformer-based Pix2Pix GAN as my final project for my deep learning class. 
 img: assets/img/12.jpg
 importance: 1
 category: work
