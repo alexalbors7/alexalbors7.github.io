@@ -1,27 +1,20 @@
 ---
 layout: page
 title: Transformer Pix2Pix
-description: I trained a transformer-based Pix2Pix GAN as my final project for my deep learning class. 
+description: I trained a transformer-based Pix2Pix GAN as a final project for CSE493G1.    
 img: assets/img/Pix2Pix.png
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+We trained introduced transformers into a standard Pix2Pix GAN, and experimented with four different architectures. The final project report, incwhich includes all output images, a detatiled implementation, and training curves, can be found [here](https://github.com/alexalbors7/Transformer-based-Pix2Pix/) 
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
 
-<div class="row">
+
+
+<!-- <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -78,4 +71,4 @@ Here's the code for the last row of images above:
 </div>
 ```
 
-{% endraw %}
+{% endraw %} -->
