@@ -9,5 +9,5 @@ category: work
 related_publications: true
 ---
 
-I presented the paper 'Log Concave Polynomials II: High-Dimensional Walks and an FPRAS for Counting Bases of a Matroid;, by Nima Anari, Kuikui Liu, Shayan Oveis Gharan and Cynthia Vinzant. The slides can be found [here](), which includes a (brief) introduction to Log Concavity, Markov Chains and Matroids, as well as pictures and detailed explanations. 
+I presented the paper 'Log Concave Polynomials II: High-Dimensional Walks and an FPRAS for Counting Bases of a Matroid;, by Nima Anari, Kuikui Liu, Shayan Oveis Gharan and Cynthia Vinzant. The slides can be found {% cite einstein1950meaning %} [here](), which includes a (brief) introduction to Log Concavity, Markov Chains and Matroids, as well as pictures and detailed explanations. 
 
