@@ -88,7 +88,7 @@ __Proposition 2__: The following properties for operators hold:
 
 _Proof of Proposition 2_:
 First is easy and follows by definition. Second is harder, called **Minty's surjectivity theorem**.
-It turns out the converse of Minty's surjectivity theorem holds. Both proofs can be found in \cite{RyuYin2022}'s Stanford slides, available [here](https://large-scale-book.mathopt.com/slides/chapter10.pdf).
+It turns out the converse of Minty's surjectivity theorem holds. Both proofs can be found in Ryu's Stanford slides  <d-cite key="RyuYin2022"></d-cite>, available [here](https://large-scale-book.mathopt.com/slides/chapter10.pdf).
 
 - It is clear that a non-expansive operator need not converge to a fixed point: consider a rotation matrix or the operator $$x \mapsto -x$$. However, it turns out we may modify the operator to ensure convergence *while conserving the same fixed points*! We do so by averaging operators.
   
