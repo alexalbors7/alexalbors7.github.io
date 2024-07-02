@@ -231,3 +231,12 @@ $$\begin{align}
   \end{align}$$
 
 In a sense, we may think of $$w$$ as a running sum of residuals.
+
+
+### Examples 
+
+To see Douglas-Rachford in action, let us briefly mention two interesting applications of the splitting scheme. 
+
+#### Bregman Splitting
+
+#### Dykstra's alternating projections
