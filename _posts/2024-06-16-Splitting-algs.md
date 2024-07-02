@@ -233,9 +233,9 @@ $$\begin{align}
 In a sense, we may think of $$w$$ as a running sum of residuals.
 
 
-### Examples 
+### Example 
 
-To see Douglas-Rachford in action, let us briefly mention two interesting applications of the splitting scheme. 
+To see Douglas-Rachford in action, let us briefly mention an interesting applications of the splitting scheme. 
 
 #### Dykstra's alternating projections
 
@@ -255,6 +255,14 @@ $$
 \mathcal{I}_C (x) = \begin{cases} 0 & \text{ if } x \in C \\ \infty & \mathrm{otherwise} \end{cases}
 $$
 
+The standard Douglas-Rachford splitting is given by the updates 
 
+$$\begin{align*}
+  \begin{cases}
+    x_{k + 1} = \mathrm{Proj}_D(y_k) \\
+    y_{k + 1} = y_k +  \mathrm{Proj}_C(2x_{k+1} - y_k) - x_{k+1}
+  \end{cases}
+\end{align*}$$
 
-#### Bregman Splitting
+which is known as Dykstra's method of alternating projections. 
+

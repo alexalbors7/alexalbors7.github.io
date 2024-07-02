@@ -8,5 +8,5 @@ category: work
 related_publications: true
 ---
 
-We trained introduced transformers {% cite Vaswani2017 %} into a standard Pix2Pix GAN {% Isola2017 %}, and experimented with four different, novel architectures. The final project report, incwhich includes all output images, a detailed implementation, and training curves, can be found [here](https://github.com/alexalbors7/Transformer-based-Pix2Pix/) 
+We trained introduced transformers {% cite Vaswani2017 %} into a standard Pix2Pix GAN {% cite Isola2017 %}, and experimented with four different, novel architectures. The final project report, incwhich includes all output images, a detailed implementation, and training curves, can be found [here](https://github.com/alexalbors7/Transformer-based-Pix2Pix/) 
 
