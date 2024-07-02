@@ -3,6 +3,8 @@
   contents:
     - name: Full Name
       value: Alex Albors Juez
+    - name: Citizenship
+      value: Spain
 
 - title: Education
   type: time_table
