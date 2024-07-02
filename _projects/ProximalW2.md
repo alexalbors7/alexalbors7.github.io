@@ -8,5 +8,5 @@ category: work
 related_publications: true
 ---
 
-We analyzed and presented the paper 'Optimal Transport with Proximal Splitting' for a graduate gradient flows course at the University of Washington, testing the proposed algorithms on new experiments. A detailed report with the appropriate background as well as the presentation slides can be found [here](https://github.com/alexalbors7/OT-ProximalSplitting) 
+We analyzed and presented the paper 'Optimal Transport with Proximal Splitting' {% cite Papadakis_2014 %} for a graduate gradient flows course at the University of Washington, benchmarking the proposed algorithms on novel experiments. A detailed report with the appropriate background as well as the presentation slides can be found in the following [Github repository](https://github.com/alexalbors7/OT-ProximalSplitting) 
 
