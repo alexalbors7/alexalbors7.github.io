@@ -239,21 +239,17 @@ To see Douglas-Rachford in action, let us briefly mention an interesting applica
 
 #### Dykstra's alternating projections
 
-Given two closed, convex sets $$C, D$$ with non-empty intersection, consider the problem of finding a point $$\bar{x} \in C \cap D$. 
+Given two closed, convex sets $$C, D$$ with non-empty intersection, consider the problem of finding a point $$ \bar{x} \in C \cap D $$. 
 
-Firstly discussed by Von Neumann in the special case of having affine subspaces, the method of alternating projections first projects an initial point $x \in \mathbb{R}^n$ to $C$ by setting $y_1 = \mathrm{Proj}_C(x_0)$, and then projects onto the other set by letting $x_1 = \mathrm{Proj}_D(y_1)$. The sequence of iterates resulting from this procedure, i.e. $y_k = \mathrm{Proj}_C(x_k)$ and $x_{k + 1} = \mathrm{Proj}_D(y_k)$ has been proved to converge to $\bar{x} = C \cap D$ at a linear rate. 
+Firstly discussed by Von Neumann in the special case of having affine subspaces, the method of alternating projections first projects an initial point $$x \in \mathbb{R}^n$$ to $$C$$ by setting $$y_1 = \mathrm{Proj}_C(x_0)$$, and then projects onto the other set by letting $$x_1 = \mathrm{Proj}_D(y_1)$$. The sequence of iterates resulting from this procedure, i.e. $$y_k = \mathrm{Proj}_C(x_k)$$ and $$x_{k + 1} = \mathrm{Proj}_D(y_k)$$ has been proved to converge to $$\bar{x} = C \cap D$$ at a linear rate. 
 
 However, we can formulate this problem as a convex optimization problem ammenable to proximal splitting algorithms, using Douglas-Rachford to obtain a faster rate. The problem is equivalent to the minimization
 
-$$ 
-\min_x \mathcal{I}_{C}(x) + \mathcal{I}_{D}(x) \
-$$
+$$\begin{align*}\min_x \mathcal{I}_{C}(x) + \mathcal{I}_{D}(x)\end{align*}$$
 
 where 
 
-$$ 
-\mathcal{I}_C (x) = \begin{cases} 0 & \text{ if } x \in C \\ \infty & \mathrm{otherwise} \end{cases}
-$$
+$$\mathcal{I}_C (x) = \begin{cases} 0 & \text{ if } x \in C \\ \infty & \mathrm{otherwise} \end{cases}$$
 
 The standard Douglas-Rachford splitting is given by the updates 
 
