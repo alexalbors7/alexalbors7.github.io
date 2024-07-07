@@ -5,6 +5,8 @@
       value: Alex Albors Juez
     - name: Citizenship
       value: Spain
+    - name: Contact
+      vaue: aalbors@uw.edu
 
 - title: Education
   type: time_table
