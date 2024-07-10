@@ -23,7 +23,7 @@
   type: time_table
   contents:
     - title: Undergraduate Student Researcher
-      institution: University of Washington, Seattle
+      institution: Department of Applied Mathematics, University of Washington, Seattle
       year: 2023
       description:
         - Implement MCMC Algorithms for Bayesian Inverse Problems
@@ -35,7 +35,7 @@
         - Investigated structure of optimal "Bad Science" matrices, first described <a href = "https://arxiv.org/abs/2402.03205"> here </a>.  
         - Supervised by Professor Stefan Steinerberger and Graduate Student Tony Zeng. 
         - Report will come very soon
-    - title: Statistics Intern
+    - title: Statistics Research Intern
       institution: University of Warwick, Coventry
       year: PRESENT
       description:
