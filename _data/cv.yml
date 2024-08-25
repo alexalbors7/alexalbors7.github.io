@@ -26,8 +26,9 @@
       institution: Department of Applied Mathematics, University of Washington, Seattle
       year: 2023
       description:
-        - Implement MCMC Algorithms for Bayesian Inverse Problems
-        - Supervised by Prof. Bamdad Hosseini
+        - Implement MCMC Algorithms for Bayesian Inverse Problems on function spaces. 
+        - Focus on an RCAR Algorithm with non-Gaussian prior, introduced <a href = "https://epubs.siam.org/doi/10.1137/18M1183017"> here </a>.
+        - Supervised by Professor Bamdad Hosseini
     - title: Undergraduate Student Researcher
       institution: Washington eXperimental Mathematics Laboratory
       year: 2024
