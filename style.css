@@ -92,3 +92,9 @@ a:hover {
     height: 160px;
   }
 }
+
+hr.sep {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 2em 0;
+}
