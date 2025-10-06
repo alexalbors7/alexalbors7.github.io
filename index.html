@@ -19,20 +19,42 @@
     a { color: #0044aa; text-decoration: none; }
     a:hover { text-decoration: underline; }
     .sep { text-align:center; margin:1.2em 0; color:#666; }
+
+    /* new: simple horizontal layout for name + photo */
+    .top {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .photo {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
   </style>
 </head>
 <body>
-  <h1>Alex Albors Juez</h1>
-  <p>PhD Student<br>
-     Courant Institute of Mathematical Sciences<br>
-     New York University<br>
-     <a href="mailto:alex.albors@nyu.edu">alex.albors@nyu.edu</a>
-  </p>
+  <div class="top">
+    <div>
+      <h1>Alex Albors Juez</h1>
+      <p>PhD Student<br>
+         Courant Institute of Mathematical Sciences<br>
+         New York University<br>
+         <a href="mailto:alex.albors@nyu.edu">alex.albors@nyu.edu</a>
+      </p>
+    </div>
+
+    <!-- 👇 your photo goes here -->
+    <img src="photo.jpg" alt="Alex Albors Juez" class="photo">
+  </div>
 
   <div class="sep">* * *</div>
 
-  <p>I am a PhD student in Applied Mathematics at NYU's Courant Institute.  
-     I am interested in Scientific Machine Learning, particularly Uncertainty Quantification.</p>
+  <p>I am a PhD student in Applied Mathematics at NYU’s Courant Institute.  
+     My research interests lie in Scientific Machine Learning, particularly in Uncertainty Quantification.</p>
 
   <h2>Links</h2>
   <ul>
