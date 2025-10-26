@@ -88,9 +88,14 @@ a:hover {
   }
 
   .photo {
-    width: 160px;
-    height: 160px;
-  }
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  filter: brightness(95%) contrast(95%);
+}
+
 }
 
 hr.sep {
