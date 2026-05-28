@@ -3,48 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Alex Albors Juez, Mathematics PhD student at the Courant Institute, New York University." />
   <title>Alex Albors Juez</title>
-  <style>
-    body {
-      font-family: Georgia, serif;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 0 15px;
-      line-height: 1.5;
-      color: #222;
-      background: #ffffff;
-    }
-    h1 { margin-bottom: 0; }
-    h2 { font-size: 1.1em; margin-top: 1.5em; }
-    a { color: #0044aa; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .sep { text-align:center; margin:1.2em 0; color:#666; }
-
-    .top {
-      display: flex;
-      align-items: flex-start;
-      gap: 50px;
-      flex-wrap: wrap;
-    }
-    .photo {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 3px;
-      border: 1px solid #ccc;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="top">
-    <div>
-      <h1>Alex Albors Juez</h1>
-      <p>PhD Student<br>
-         Courant Institute of Mathematical Sciences<br>
-         New York University<br>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Courant Institute of Mathematical Sciences</p>
+        <h1>Alex Albors Juez</h1>
+        <p class="role">
+          PhD student in Mathematics at New York University.
+        </p>
+        <div class="contact" aria-label="Contact and profiles">
           <a href="mailto:alex.albors@nyu.edu">alex.albors@nyu.edu</a>
+          <a href="https://scholar.google.com/citations?user=DfjC8B8AAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://github.com/alexalbors7" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- <a href="works.html">Writing &amp; Teaching</a> -->
+        </div>
+      </div>
+
+      <img src="./photo.jpg" alt="Alex Albors Juez" class="portrait" />
+    </header>
+
+    <section class="section">
+      <h2>About</h2>
+      <p class="intro">
+          I am a first-year PhD student in Applied Mathematics at Courant, advised by Professor Florian Schäfer. My research interests include the use of tools from statistical inference, especially optimal transport and Bayesian inference, in numerical PDE.
       </p>
-    </div>
+      <p class = "intro">
+        I am associated with the <a href="https://cigmo.github.io/" target="_blank" rel="noreferrer">CIGMO center</a>.
+      </p>
+    </section>
+
+    <section class="section">
+      <div>
+        <h2>Writing</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://arxiv.org/abs/2412.04284" target="_blank" rel="noreferrer">Approximately Jumping towards the Origin</a>
+            <span class="desc">Preprint with coauthors.</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2408.00933" target="_blank" rel="noreferrer">On the Structure of Bad Science Matrices</a>
+            <span class="desc">Involve, 2024, with coauthors.</span>
+          </li>
+        </ul>
+      </div>
 
     <img src="./photo.jpg" alt="Alex Albors Juez" class="photo">
   </div>
