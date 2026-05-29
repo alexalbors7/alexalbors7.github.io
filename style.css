@@ -167,7 +167,6 @@ h3 {
   object-position: center 20%;
   border: 1px solid var(--line);
   border-radius: 4px;
-  filter: saturate(0.92) contrast(0.98);
 }
 
 .intro {
